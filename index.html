@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Testing fans on their knowlege of the Nightmare before Christmas">
+    <meta name="keywords"
+        content="Tim burton, Nightmare before Christmas, Sally, Zero the dog">
+    <!--link to CSS-->
+    <link rel="stylesheet" href="style.css">
+    <title>The Nightmare Before Christmas</title>
+</head>
+<body>
+<!--Navigation-->
+    <div id="menu">
+        <ul>
+            <li><a class="menu__item" href="index.html" aria-label="Go to Home Page">Home</a></li><!--link to home.html-->
+            <li><a class="menu__item" href="howto.html" aria-label="Go to our How to Play page">How to Play</a></li><!--link howto.html-->
+        </ul>
+    </div>
+<!--start quiz-->
+<body onload="NextQuestion(0)">
+    <main>
+        <!-- creating a modal for when quiz ends -->
+        <div class="modal-container" id="score-modal">
+            <div class="modal-content-container">
+                <h1>Congratulations, Quiz Completed.</h1>
+                <div class="grade-details">
+                    <p>Attempts : 10</p>
+                    <p>Wrong Answers : <span id="wrong-answers"></span></p>
+                    <p>Right Answers : <span id="right-answers"></span></p>
+                    <p>Grade : <span id="grade-percentage"></span>%</p>
+                    <p ><span id="remarks"></span></p>
+                </div>
+                <div class="modal-button-container">
+                    <button onclick="closeScoreModal()">Continue</button>
+                </div>
+            </div>
+        </div>
+<!-- end of modal of quiz details-->
+        <div class="game-quiz-container">
+            <div class="game-details-container">
+                <h1>Score : <span id="player-score"></span> / 10</h1>
+                <h1> Question : <span id="question-number"></span> / 10</h1>
+            </div>
+            <div class="game-question-container">
+                <h1 id="display-question"></h1>
+            </div>
+            <div class="game-options-container"></div>
+               <div class="modal-container" id="option-modal">
+                    <div class="modal-content-container">
+                         <h1>Please Pick An Option</h1>
+                         <div class="modal-button-container">
+                            <button onclick="closeOptionModal()">Continue</button>
+                        </div>
+                    </div>
+               </div>
+               <span>
+                    <input type="radio" id="option-one" name="option" class="radio" value="optionA" />
+                    <label for="option-one" class="option" id="option-one-label"></label>
+                </span>
+                <span>
+                    <input type="radio" id="option-two" name="option" class="radio" value="optionB" />
+                    <label for="option-two" class="option" id="option-two-label"></label>
+                </span>
+                <span>
+                    <input type="radio" id="option-three" name="option" class="radio" value="optionC" />
+                    <label for="option-three" class="option" id="option-three-label"></label>
+                </span>
+                <span>
+                    <input type="radio" id="option-four" name="option" class="radio" value="optionD" />
+                    <label for="option-four" class="option" id="option-four-label"></label>
+                </span>
+            <div class="next-button-container">
+                <button onclick="handleNextQuestion()">Next Question</button>
+            </div>
+
+        </div>
+    </main>
+    <script src="quiz.js"></script>
+</body>
+<footer>
+    <div id="footer-content">
+        <table class="social-networks">
+            <th id="linkedin">
+                <a href="https://www.linkedin.com/in/hana-mailing-smith-097a83162/" target="_blank" rel="noopener"
+                    aria-label="Visit my LinkedIn page"><img src="linkedin.jpg"><!--opens in new tab-->
+                    <em class="fa-brands fa-linkedin"></em></a>
+                <a href="https://github.com/Beaniee2" target="_blank" rel="noopener"
+                    aria-label="Visit my Github page"><img src="github.jpg"> <!--opens in new tab-->
+                    <em class="fa-brands fa-github"></em></a>
+                    <p>@ 2023 Copyright:Hana Mailing-Smith all rights reserved</p>
+            </th>
+        </table>
+    </div>
+</footer>
