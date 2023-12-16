@@ -22,7 +22,7 @@ Continued development
 I would like to try and learn and understand Javascript more and learn how to use it to its full potential. 
 
 Challenges that arose
-The images worked well in chrome
+The images worked well in chrome, Explorer and on mobile view. I struggled with getting the font size suitable for mobile view and for laptop/desktop viewing. 
 
 Author
 Hana
