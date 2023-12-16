@@ -33,7 +33,7 @@
     background-color: rgb(245, 242, 239); 
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    float: center;
+    float-content: center;
     position: relative;
 }
 
@@ -85,7 +85,6 @@ main{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color : none;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
