@@ -111,7 +111,7 @@ main{
 }
 
 .game-details-container h1{
-  font-size: 25px;
+  font-size: 20px;
   color: white;
 }
 
@@ -126,7 +126,7 @@ main{
 }
 
 .game-question-container h1{
-  font-size: 25px;
+  font-size: 20px;
   text-align: center;
   padding: 3px;
   color: white;
